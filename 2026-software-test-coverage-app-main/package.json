@@ -1,0 +1,31 @@
+{
+  "name": "software-test-coverage-app-2026",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ソフトウェアテスト授業(2026): カバレッジ道場(RN+Expo TODOアプリ)",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "test": "vitest run --exclude '**/*.solution.test.ts'",
+    "test:watch": "vitest --exclude '**/*.solution.test.ts'",
+    "test:solution": "vitest run",
+    "cov": "vitest run --coverage --exclude '**/*.solution.test.ts'",
+    "cov:solution": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "~54.0.35",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "devDependencies": {
+    "@expo/ngrok": "^4.1.0",
+    "@types/react": "~19.1.17",
+    "@vitest/coverage-v8": "^2.1.8",
+    "babel-preset-expo": "~54.0.11",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@9.12.3"
+}
